@@ -9,6 +9,21 @@ var messageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl =document.getElementById("cards-el")
 
+var playerEl = document.getElementById("name-el")
+var chipsEl = document.getElementById("chips-el")
+
+var player = {
+    name: "Test",
+    chips: 100
+}
+
+playerEl.textContent = "Player Name: " + player.name
+
+chipsEl.textContent = "Player Chips: $" + player.chips 
+
+
+
+
 function getRandomCard() {
     var randomCard = Math.floor(Math.random() * 13) + 1
     
@@ -57,9 +72,11 @@ function renderGame() {
 }
 
 function newCard() {
+    if (isAlive == true && hasBlackJack == false){
     console.log("Drawing a New Card!")
     var card = getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
+    }
 }
