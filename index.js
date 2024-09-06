@@ -9,17 +9,17 @@ var messageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl =document.getElementById("cards-el")
 
-var playerEl = document.getElementById("name-el")
-var chipsEl = document.getElementById("chips-el")
+// var playerEl = document.getElementById("name-el")
+// var chipsEl = document.getElementById("chips-el")
 
-var player = {
-    name: "Test",
-    chips: 100
-}
+// var player = {
+//     name: "Test",
+//     chips: 100
+// }
 
-playerEl.textContent = "Player Name: " + player.name
+// playerEl.textContent = "Player Name: " + player.name
 
-chipsEl.textContent = "Player Chips: $" + player.chips 
+// chipsEl.textContent = "Player Chips: $" + player.chips 
 
 
 
